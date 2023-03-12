@@ -1,0 +1,34 @@
+<data>
+
+        <record id="view_academia_form" model="ir.ui.view">
+            <field name="name">academia.form</field>
+            <field name="model">module_ninja.academia</field>
+            <field name="arch" type="xml">
+                <form string="Academia">
+                    <group>
+                        <field name="name"/>
+                        <field name="shinobi_ids" mode="tree">
+                            <tree>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                        <field name="ninja_ids" mode="tree">
+                            <tree>
+                                <field name="name"/>
+                                <field name="salary"/>
+                            </tree>
+                        </field>
+                        <field name="avg_ninja_salary" readonly="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+ <record id="action_academia_form" model="ir.actions.act_window">
+            <field name="name">Academia</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">module_ninja.academia</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+</data>
