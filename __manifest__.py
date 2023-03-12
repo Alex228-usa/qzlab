@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "MyModule",
-
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+    'name': "qzlab Module",
 
     'description': """
-        very first odoo module
+        hello qzlab!
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "qz hub",
+    'website': "http://www.qzhub.com",
 
 
     'category': 'Uncategorized',
